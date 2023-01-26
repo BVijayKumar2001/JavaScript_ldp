@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Restaurant</title>
+    
+</head>
+<body>
+
+    <section id="home">
+        <div id="table">
+            <h1>Table</h1>
+            <input type="text" class="input" placeholder="search table" id="table-search" oninput="searchTable()"/>
+            <ul id="tables">      
+            </ul>
+        </div>
+        <div id="menu">
+            <h1>Menu</h1>
+            <input type="text" class="input" placeholder="Search menu...  by course, by food" id="menu-search" oninput="searchMenu()"  />
+            <ul id="menu-items"></ul>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div id="modal-header"></div>
+              <div id="modal-body">
+                <table id="rows">
+                  <tr>
+                    <th>S.No</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Item Total</th>
+                  </tr>
+                </table>
+                <p id="total"></p>
+              </div>
+              <div id="modal-footer"></div>
+            </div>
+          </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
